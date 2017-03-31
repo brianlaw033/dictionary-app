@@ -1,13 +1,8 @@
-<div class='container-fluid'>
-  <a href = '/new_word'><button class='btn btn-success'>Add New Word</button></a>
-</div>
-
-<div style='padding-top: 50px;'>
-  <ul class='unstyled-list'>
+<a href = '/new_word'><button class='btn btn-success' style ='float: right;'>Add New Word</button></a>
+<div>
+  <h3>Lsit of Words</h3>
     <% @words.each do |word|%>
-      <li>
-        <a href='/word/<%=word.id%>'><%= word.word %></a><br />
-      </li>
+      <a href='/word/<%=word.id%>'><%= word.word %></a><br />
     <%end%>
   </ul>
 </div>

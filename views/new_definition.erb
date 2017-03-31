@@ -2,11 +2,8 @@
   <h3>Add New Definition</h3>
   <form action='/definition' method='post'>
     <input name= 'id' value = '<%=@word.id%> 'type='hidden' />
-    <input name='definition'/>
-    <button type='submit' class='btn btn-success'>Submit</button>
+    <textarea cols='100'rows='15'name='definition'></textarea><br /><br />
+    <button type='submit' class='btn btn-success'style ='width: 151.77px'>Submit</button>
   </form>
+    <a href = '/'><button class='btn btn-primary'>Back to Home Page</button></a>
 </div>
-
-
-
-<a href = '/'><button class='btn btn-primary'>Back to Home Page</button></a>

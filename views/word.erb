@@ -1,16 +1,10 @@
-<div style='padding-top: 30px;'>
+<div>
   <h1><%= @word.word %></h1>
 </div>
-<div style='padding-top: 30px; padding-bottom: 30px;'>
-  <ul class='unstyled-list'>
-    <% @word.definitions.each do |definition| %>
-      <li>
-        <%= definition.definition %><br />
-      </li>
-    <% end %>
-  </ul>
-</div>
-
+  <% @word.definitions.each do |definition| %>
+    <div class='thumbnail'style='padding-top: 30px; padding-bottom: 30px; width: 100%'>
+      <%= definition.definition %><br />
+    </div>
+  <% end %>
 <a href ='/<%= @word.id%>/new_definition'><button class='btn btn-success'>Add New Definition</button></a>
-
 <a href = '/'><button class='btn btn-primary'>Back to Home Page</button></a>
