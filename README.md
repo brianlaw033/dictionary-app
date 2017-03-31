@@ -1,4 +1,4 @@
-# word-count
+# dictionary
 
 ## Prerequisites
 
@@ -12,6 +12,7 @@ You will need the following things properly installed on your computer.
 * `cd word_count`
 * `npm install`
 * `gem install`
+* `bundle install`
 ## Running / Development
 
 * `ruby app.rb`
